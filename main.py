@@ -14,8 +14,8 @@ def deblur_image(input_path):
                        [0, -1, 0]])
     deblurred = cv2.filter2D(image, -1, kernel)
 
-    cv2.imshow("Immagine Originale", image)
-    cv2.imshow("Immagine Unblurrata", deblurred)
+    cv2.imshow("Originale", image)
+    cv2.imshow("Unblurrata", deblurred)
 
     print("Premi un tasto qualsiasi per chiudere le finestre...")
     cv2.waitKey(0)
